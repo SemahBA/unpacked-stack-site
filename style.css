@@ -1,0 +1,14 @@
+:root { --bg: #12110f; --text: #f3eee5; --muted: #a39b8f; --mark: #f4c95d; --answer: #5fd4a0; --line: #34302a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+.brand { font: 600 22px/1 ui-monospace, "JetBrains Mono", Consolas, monospace; margin: 0 0 32px; }
+.brand a { color: var(--text); text-decoration: none; }
+.brand span { color: var(--mark); }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+a { color: var(--answer); }
+.muted { color: var(--muted); }
+ul { padding-left: 22px; }
+.links { list-style: none; padding: 0; }
+.links li { margin: 8px 0; }
