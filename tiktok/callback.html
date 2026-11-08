@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connecting TikTok · Unpacked Stack</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<p class="brand">~/stack/<span>unpacked</span></p>
+<h1>Connecting TikTok…</h1>
+<p class="muted">Sending you back to Unpacked Stack Studio. If nothing happens, <a id="go" href="http://localhost:3200/">click here</a>.</p>
+</main>
+<script>
+  // TikTok only accepts https redirect pages; our studio runs locally, so pass the result straight through.
+  var target = "http://localhost:3200/api/tiktok/callback" + window.location.search;
+  document.getElementById("go").href = target;
+  window.location.replace(target);
+</script>
+</body>
+</html>
